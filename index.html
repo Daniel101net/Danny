@@ -108,11 +108,13 @@ body{
     transform:translateY(-2px);
 }
 .container{
-    max-width:1000px;   /* Adjust if you want cards wider or narrower */
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr;
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
     gap:40px;
+}
 }
 .title{
     text-align:center;
@@ -297,7 +299,6 @@ footer{
 
     .container{
         grid-template-columns:1fr;
-        gap:25px;
     }
 
     .title{
@@ -460,7 +461,7 @@ Start Learning
 <h2>🎬 Video Editing</h2>
 <img src="video.jpg"
      alt="Video Editing"
-     class="video-image"loading="lazy">
+     class="video-image" loading="lazy">
   
 <p>
 Video editing is one of the fastest-growing digital skills today. Millions of videos are uploaded every day, creating a huge demand for skilled editors. Businesses and content creators rely on editors to produce engaging, high-quality videos.
@@ -585,7 +586,7 @@ Start Learning
 <h2>📈 Digital Marketing</h2>
 <img src="Marketing.jpg"
      alt="Digital Marketing"
-     class="marketing-image"loading="lazy">
+     class="marketing-image" loading="lazy">
   
 <p>
 Digital marketing is one of the fastest-growing online skills. Businesses of all sizes rely on digital marketers to promote their products and services through search engines, social media, email campaigns, paid advertising, and content marketing. As more companies move online, skilled digital marketers are in high demand.
@@ -1046,11 +1047,11 @@ Start Learning
     <p>💙 Your support helps keep this website free and allows me to continue creating helpful content.</p>
 </div>
 
+
+</div>
 <footer>
 © 2026 Side Hustle Hub | Learn New Skills • Build New Income Streams
 </footer>
-</div>
-
 
 
 
