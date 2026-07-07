@@ -59,18 +59,20 @@ window.cookiehub.load(cpm);
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
         135deg,
         #0f172a 0%,
         #312e81 30%,
         #6d28d9 70%,
         #8b5cf6 100%
     );
-    background-attachment: fixed;
+    background-attachment:fixed;
     color:#fff;
     line-height:1.7;
     padding:40px 20px;
+
+    overflow-x:hidden;
 }
 /* Navigation */
 
@@ -108,9 +110,8 @@ body{
 .container{
     max-width:1600px;
     margin:auto;
-
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(700px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:40px;
 }
 .title{
@@ -286,7 +287,56 @@ footer{
     margin:20px 0;
     display:block;
 }
+/* Mobile Optimization */
 
+@media (max-width:768px){
+
+    body{
+        padding:20px 12px;
+    }
+
+    .container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .title{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .card{
+        padding:20px;
+        min-height:auto;
+    }
+
+    .navbar{
+        justify-content:flex-start;
+        overflow-x:auto;
+        white-space:nowrap;
+        padding:12px;
+        border-radius:12px;
+    }
+
+    .navbar a{
+        font-size:14px;
+        padding:8px 14px;
+        flex:0 0 auto;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+}
 </style>
 <script type="application/ld+json">
 {
@@ -310,7 +360,7 @@ footer{
 <p class="subtitle">
 Looking to earn money online? You're in the right place! Explore a curated collection of beginner-friendly side hustles, digital skills, and trusted courses designed to help you start building multiple income streams from anywhere in the world. 🚀
 </p>
-<div class="container">
+
 <nav class="navbar">
 
 <a href="#website-development">💻 Web Dev</a>
@@ -335,7 +385,7 @@ Looking to earn money online? You're in the right place! Explore a curated colle
 
 </nav>
 
-<div class="container" id="website-development">
+<div class="container">
 
 <!-- Website Development -->
 <div class="card web" id="website-development">
@@ -346,9 +396,9 @@ Looking to earn money online? You're in the right place! Explore a curated colle
 </div>
 
 <h2>💻 Website Development</h2>
-<img src="web-img.png.jpg"
+<img src="web-img.jpg"
      alt="Website Development"
-     class="web-image">
+     class="web-image" loading="lazy">
   
 <p>
 Web design and development is the process of creating websites that are both visually appealing and functional. Businesses everywhere are constantly searching for professionals who can build or improve their websites, creating a steady demand for skilled designers and developers.
@@ -408,9 +458,9 @@ Start Learning
 
 
 <h2>🎬 Video Editing</h2>
-<img src="video.png.jpg"
+<img src="video.jpg"
      alt="Video Editing"
-     class="video-image">
+     class="video-image"loading="lazy">
   
 <p>
 Video editing is one of the fastest-growing digital skills today. Millions of videos are uploaded every day, creating a huge demand for skilled editors. Businesses and content creators rely on editors to produce engaging, high-quality videos.
@@ -443,7 +493,7 @@ Of course, like any skill, video editing has its disadvantages:
 <h3>📚 Don't Know How to Edit Yet?</h3>
 
 <p>
-No problem! Start learning today with a beginner-friendly course that teaches you step by step.
+No problem! Start learning today with a beginner-friendly course that teaches you step by step. Click the Start Learing Button below to get started 
 </p>
 
 <div class="button-container">
@@ -467,9 +517,9 @@ Start Learning
 </div>
 
 <h2>🎨 Graphic Design</h2>
-<img src="Graphics.png.jpg"
+<img src="Graphics.jpg"
      alt="Graphic Design"
-     class="graphics-image">
+     class="graphics-image" loading="lazy">
   
 <p>
 Graphic design is one of the most in-demand online skills. Businesses, content creators, and brands constantly need professional logos, social media graphics, flyers, business cards, posters, YouTube thumbnails, and marketing materials.
@@ -509,7 +559,7 @@ Graphic design is a valuable digital skill that can provide a steady source of f
 </p>
 
 <p>
-🌟 Ready to become a graphic designer? Start with a beginner-friendly course that teaches you everything from the basics to creating professional designs.
+🌟 Ready to become a graphic designer? Start with a beginner-friendly course that teaches you everything from the basics to creating professional designs.Click the Start Learning Button below to get started
 </p>
 
 <div class="button-container">
@@ -533,9 +583,9 @@ Start Learning
 </div>
 
 <h2>📈 Digital Marketing</h2>
-<img src="Marketing.png.jpg"
+<img src="Marketing.jpg"
      alt="Digital Marketing"
-     class="marketing-image">
+     class="marketing-image"loading="lazy">
   
 <p>
 Digital marketing is one of the fastest-growing online skills. Businesses of all sizes rely on digital marketers to promote their products and services through search engines, social media, email campaigns, paid advertising, and content marketing. As more companies move online, skilled digital marketers are in high demand.
@@ -575,7 +625,7 @@ Digital marketing is a valuable skill that opens the door to freelancing, remote
 </p>
 
 <p>
-🌟 Ready to master digital marketing? Start with a beginner-friendly course that teaches SEO, social media marketing, email marketing, paid advertising, and more.
+🌟 Ready to master digital marketing? Start with a beginner-friendly course that teaches SEO, social media marketing, email marketing, paid advertising, and more. Click the Start Learning Button below to get started
 </p>
 
 <div class="button-container">
@@ -599,9 +649,9 @@ Start Learning
 </div>
 
 <h2>🧑‍💼 Virtual Assistance</h2>
-<img src="Assistance.png.jpg"
+<img src="Assistance.jpg"
      alt="Virtual Assistance"
-     class="virtual-image">
+     class="virtual-image" loading="lazy">
   
 <p>
 Virtual assistance is one of the easiest online careers to start. Virtual assistants (VAs) provide remote administrative, technical, and creative support to entrepreneurs, businesses, and busy professionals. With just a computer and a reliable internet connection, you can work with clients from anywhere in the world.
@@ -641,7 +691,7 @@ Virtual assistance is an excellent way to build a stable online income. As you g
 </p>
 
 <p>
-🌟 Ready to become a professional virtual assistant? Start with a beginner-friendly course that teaches the essential skills, tools, and strategies needed to find clients and build a successful remote career.
+🌟 Ready to become a professional virtual assistant? Start with a beginner-friendly course that teaches the essential skills, tools, and strategies needed to find clients and build a successful remote career. Click the Start Learning Button below to get started
 </p>
 
 <div class="button-container">
@@ -664,9 +714,9 @@ Start Learning
 
 
 <h2>✍️ Freelance Writing</h2>
-<img src="Freelance.png.jpg"
+<img src="Freelance.jpg"
      alt="Freelance Writing"
-     class="writing-image">
+     class="writing-image" loading="lazy">
   
 <p>
 Freelance writing is a flexible online career where you write content for businesses, websites, and creators. You can write blog posts, articles, product descriptions, email campaigns, social media posts, and much more while working from anywhere.
@@ -694,7 +744,7 @@ Freelance writing is a flexible online career where you write content for busine
 <h3>⚠️ Disadvantages</h3>
 
 <p>
-Affiliate marketing can be rewarding, but it isn't a get-rich-quick business.
+Freelance writing is rewarding, but it also comes with challenges that new writers should understand.
 </p>
 
 <ul>
@@ -707,7 +757,7 @@ Affiliate marketing can be rewarding, but it isn't a get-rich-quick business.
 <h3>📚 Ready to Learn?</h3>
 
 <p>
-If you'd like to learn more about freelance writing and how to get your first client, click the button below.
+If you'd like to learn more about freelance writing and how to get your first client, click Start Learning Button below.
 </p>
 
 <div class="button-container">
@@ -734,10 +784,10 @@ Start Learning
 
 
 
-<h2> Affiliate Marketing</h2>
-<img src="Affilliate.png.jpg"
+<h2>💸 Affiliate Marketing</h2>
+<img src="Affiliate.jpg"
      alt="Affiliate Marketing"
-     class="affiliate-image">
+     class="affiliate-image" loading="lazy">
   
 <p>
     💸 Affiliate Marketing is a side hustle where you earn a commission by promoting other people's products or services. Simply share your unique affiliate link, and when someone makes a purchase through it, you get paid! 🎉
@@ -760,7 +810,7 @@ Affiliate marketing can be rewarding, but it isn't a get-rich-quick business.
 </ul>
 
 <p>If you are looking to dive into this side hustle i have the perfect course for you 
-    click the start learning buton below to get started
+    click the Start Learning button below to get started
 </p>
 
 <div class="button-container">
@@ -786,9 +836,9 @@ Start Learning
 
 
 <h2>🤖 Faceless YouTube Channel</h2>
-<img src="Youtube.png.jpg"
-     alt="Faceless YouTube"
-     class="youtube-image">
+<img src="Youtube.jpg"
+     alt="Faceless YouTube Channel"
+     class="youtube-image" loading="lazy">
   
 <p>
 A <strong>faceless YouTube channel</strong> is one of the best side hustles for anyone looking to earn extra income online. With the help of AI-powered tools, you can create high-quality videos using AI-generated scripts, realistic voiceovers, engaging visuals, and eye-catching thumbnails—all without ever appearing on camera.
@@ -863,9 +913,9 @@ Start Learning
 </div>
 
 <h2>🛒 AI Dropshipping</h2>
-<img src="Shipping.png.jpg"
+<img src="Shipping.jpg"
      alt="AI Dropshipping"
-     class="dropshipping-image">
+     class="dropshipping-image" loading="lazy">
   
 <p>
 AI dropshipping is one of the smartest side hustles for anyone looking to start an online business with low upfront costs. Instead of stocking inventory or handling shipping, you sell products through your online store while suppliers fulfill orders for you. With the power of AI, you can automate tasks like product research, writing product descriptions, creating ads, and providing customer support—making it easier than ever to run your business. 🤖📦
@@ -938,9 +988,9 @@ Start Learning
     <p><strong>💵 Startup Cost:</strong> Very Low</p>
 </div>
 <h2>📱 Social Media Management</h2>
-<img src="Media.png.jpg"
+<img src="Media.jpg"
      alt="Social Media Management"
-     class="social-image">
+     class="social-image" loading="lazy">
   
 <p>
 Social media management is a rewarding side hustle where you help businesses, brands, and content creators grow their online presence. With AI tools, you can streamline content creation, planning, and analytics, making it easier to manage multiple accounts. 🤖📈
